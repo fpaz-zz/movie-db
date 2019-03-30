@@ -10,7 +10,7 @@ import MovieBrowser from './components/MovieBrowser';
 import MovieDetails from './components/MovieDetails';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './styles/index.css';
+import './styles/index.scss';
 
 const initialState = {};
 const store = configureStore(initialState);
