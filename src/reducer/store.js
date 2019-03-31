@@ -9,28 +9,26 @@ import { stateTransformer } from '../helpers/utils';
 import rootReducer from './';
 
 const loggerMiddleware = createLogger({
-    stateTransformer,
-    collapsed: true,
+  stateTransformer,
+  collapsed: true
 });
 const history = createBrowserHistory();
 const historyRouterMiddleware = routerMiddleware(history);
 
-const configureStore = (initialState) => 
-    createStore(
-        rootReducer,
-        Immutable.fromJS(initialState),
-        compose(
-            applyMiddleware(
-                thunk,
-                loggerMiddleware,
-                historyRouterMiddleware,
-                loadingBarMiddleware({
-                    promiseTypeSuffixes: ['REQUEST', 'SUCCESS', 'FAILURE'],
-                })
-            )
-        )   
-    );
+const configureStore = initialState =>
+  createStore(
+    rootReducer,
+    Immutable.fromJS(initialState),
+    compose(
+      applyMiddleware(
+        thunk,
+        loggerMiddleware,
+        historyRouterMiddleware,
+        loadingBarMiddleware({
+          promiseTypeSuffixes: ['REQUEST', 'SUCCESS', 'FAILURE']
+        })
+      )
+    )
+  );
 
-export {
-    configureStore,
-}
+export { configureStore };
