@@ -14,7 +14,7 @@ body {
 }
 
 .stripes {
-  background: url("/stripes.png") space;
+  background: url("../resources/images/stripes.png") space;
   position: relative;
   width: 100%;
 
@@ -36,7 +36,7 @@ body {
   margin-bottom: 15px;
 
   &::after {
-    background: url("/search.png") no-repeat;
+    background: url("../resources/images/search.png") no-repeat;
     background-size: contain;
     content: '';
     display: block;
@@ -173,7 +173,7 @@ div.card {
   }
 
   .arrow-back {
-    background: url("/arrow-back.png") no-repeat;
+    background: url("../resources/images/arrow-back.png") no-repeat;
     background-size: contain; 
     cursor: pointer;
     width: 25px;

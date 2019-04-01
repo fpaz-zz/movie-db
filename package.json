@@ -2,6 +2,7 @@
   "name": "movie-db",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fpaz.github.io/movie-db/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
@@ -30,6 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint 'src/*.js' 'src/**/*.js'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,6 +46,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "gh-pages": "^2.0.1"
   }
 }
