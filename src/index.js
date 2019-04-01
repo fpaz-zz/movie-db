@@ -18,7 +18,7 @@ const store = configureStore(initialState);
 ReactDOM.render(
   <Provider store={store}>
     <App>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <PageTransition>
           <Switch>
             <Route exact path="/" component={MovieBrowser} />

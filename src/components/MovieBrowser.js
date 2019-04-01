@@ -9,6 +9,8 @@ import { updateMoviesImagePath } from '../helpers/utils';
 import MovieList from './MovieList';
 import SearchMovie from './SearchInput';
 
+import Logo from '../resources/images/tmdb-logo.png';
+
 class MovieBrowser extends Component {
   componentDidMount() {
     this.props.getTopMovies({ page: 1 });
@@ -25,7 +27,7 @@ class MovieBrowser extends Component {
         <Container>
           <Row className='back-drop'>
             <div className='stripes'>
-              <img className='logo' alt='logo' src='/tmdb-logo.png' />
+              <img className='logo' alt='logo' src={Logo} />
             </div>
           </Row>
           <Row>
