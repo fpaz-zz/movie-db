@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/movie-db/static/css/2.43517064.chunk.css"
   },
   {
-    "revision": "cd6e7a56f5d88d6975797a1d3b032b6e",
+    "revision": "8b855233f1b27ac4d2f115ce4f4de5c4",
     "url": "/movie-db/index.html"
   }
 ];
