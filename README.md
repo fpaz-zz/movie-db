@@ -1,5 +1,6 @@
 # The Movie DB Search React App
 An app created with React which uses an open movie database. (https://www.themoviedb.org/documentation/api)
+![](demo.gif)
 
 ## Features
 - Loading of popular movies in a responsive design.
